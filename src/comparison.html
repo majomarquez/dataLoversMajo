@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang= "en" >
+<head> <!-- Required meta tags -->
+    <meta charset= "utf-8" >
+    <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans" rel="stylesheet">
+    <title>Level Up LOL</title><!-- título al lado de favicon-->
+    <title>Sweet Secrets Mi Diario de Vida</title><!-- título al lado de favicon-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+     crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+  <!-- INICIO ENCABEZADO-->
+    <header>
+        <div class="container-fluid">
+            <section class= "row">
+                <div class="col-xs-12 col-md-2">
+                    <div class="headerLogo"> <!--logotipo-->
+                        <img src = "imagenes/logoSinFondo.png" class="img-responsive" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-9 ">   <!-- col-md-offset-1 para saltarme el espacio-->
+                    <h1>Level UP League of Legends</h1>
+                </div>
+            </section>
+        </div>
+            <div class="clearfix visible-xs-block"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="champions.html">Champions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="organization.html">Organización</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparar Champions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="vocabulary.html">Vocabulario</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Filtro solo muestra nombres -->
+    <div class="container" >
+        <div class="organizationBody" id="organizationBody">
+            <div class=" champs-filtering">
+                <div class="row" id="allOrganization">
+                    <h3>Clickea tu grupo seleccionado verás los que nombres de los Champions que pertenecen a él.
+                        El selector te permite visualizarlos en orden ascendente y descendente, tambien puedes ordenarlos
+                         según su Ataque, Defensa y Magia .
+                    </h3>
+                    <h1>TAG</h1>
+
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link" value="Assassin">Assassin</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link" value="Fighter">Fighter</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link" value="Mage">Mage</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link" value="Marksman">Marksman</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link"value="Support">Support</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button class="btn btn-lg btn-block btn-link" value="Tank">Tank</button>
+                    </div>
+
+               
+
+<!--Inicio Ordenar -->
+                    <article id="infoOrderChampion" class="infoOrder">
+                        <article id="selectionOrder">
+                            <article class="tagSelection">
+                                <p>Organiza tus Campeones:</p>
+                                    <div class="form-group">
+                                        <div class=" champs-filtering">
+                                            <section class="row">
+                                                <div class="col-xs-12 col-md-4 ">
+                                                    <label for="select"></label>
+                                                    <select class="form-control" id="OrderBy">
+                                                        <option value ="none">Orden</option>
+                                                        <option value ="az">Ordenar A-Z</option>
+                                                        <option value ="za">Ordenar Z-A</option>
+                                                    </select>
+                                                </div>
+                                            </section>
+                                            <section class="row">
+                                                <div class="col-xs-12 col-md-4 ">
+                                                    <label for="select"></label>
+                                                    <select class="form-control" id="selectBy">
+                                                        <option value ="none">Elije tu grupo de campeones</option>
+                                                        <option value ="attackLess">Ataque Menor o igual a 5</option>
+                                                        <option value ="attackMore">Ataque Mayor a 5  </option>
+                                                        <option value ="defenseLess">Defensa Menor o igual a 5</option>
+                                                        <option value ="defenseMore">Defensa Mayor a 5 </option>
+                                                        <option value ="magicLess">Magia Menor o igual a 5  </option>
+                                                        <option value ="magicMore">Magia Mayor a 5  </option>
+                                                    </select>
+                                                </div>
+                                            </section>
+                                            <section class="row">
+                                                <div class="col-xs-12 col-md-4 ">
+                                                    <button type="button" id="select-button">Ver mi selección</button>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                            </article>
+                        </article>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="rowOrder"  id="organizationBox">
+            </div>
+        </div>
+       
+        <div class="col-xs-12">
+            <div class="rowOrderBody"  id="organizationBoxOrder">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+<!--INICIO FOOTER>-->
+<footer>
+    <div class="container-fluid">
+        <section class="row">
+            <div class="team">
+                <div class="col-xs-6 col-md-11">
+                    <h3>Desarrolladores ficus Team</h3>
+                    <h3>Agata Gatoto</h3>
+                    <h3>Purple Maja</h3>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <div class="col-xs-6 col-md-1">
+                    <a href="https://facebook.com"target="_blank"><img src="imagenes/facebook.png" class="img-responsive" alt="facebook"></a>
+                    <a href="https://twitter.com"target="_blank"><img src="imagenes/twitter.png" class="img-responsive" alt="twitter"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+<script src="data/lol/lol.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

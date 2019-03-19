@@ -1,0 +1,252 @@
+
+/* INICIO ENCABEZADO*/
+Header{
+    background: #2F2F2F;
+
+}
+.headerLogo{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 11% 0% 0% 20%;
+    }
+Header h1 {
+    background: linear-gradient(rgb(250, 233, 0),rgb(68, 59, 23));
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 3%;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:32px ;
+    font-weight: bold;
+    text-transform: none;
+}
+    @media (max-width:768px) and (min-width:1px) {
+        Header h1 {
+            font-size: 12px;
+        }
+}/*----- FIN ENCABEZADO-----*/
+
+
+
+/*INICIO MENU DE NAVEGACION*/
+
+.navbar-nav {
+    background: #2F2F2F;
+    float: none;
+}
+
+.navbar ul li  {
+    
+    float: left;
+    padding: 2%;
+    }
+    
+.a {
+    font-size: 17px;
+    text-decoration: none;
+    
+    }
+.navbar ul li a:hover {
+    background: #bebdbd;
+    color:#2F2F2F;
+}
+
+/*----- FIN MENU DE NAVEGACION-----*/
+
+/* INICIO CSS EN COMUN*/
+.navbar ul li a  , .navbar ul li a:hover ,.infoHome p, .organizationBody h1, .organizationBody button {
+    font-family: 'Open Sans', sans-serif;
+    }
+.container h3, .container h2,.organizationBody button, .buttonBack,.championBody h2,.vocabularyBody h2,
+.navbar-brand , .vocabularyBody h4{
+color: #c9a91afd;
+}
+.infoHome p, .container{
+background: #31312eb9;
+padding:0% 2% 0% 2%;
+}
+.infoHome p,.championBody p,.container h1, p, .navbar ul li a ,.form-control,.champion-wrapper,.imagenesLink a,
+ .vocabularyBody h3 {
+color:#f8f2dc;
+}
+.vocabularyBody h2, .vocabularyBody h4,.vocabularyBody h3,.infoHome p{
+text-align: center;
+}
+/*----- FIN CSS EN COMUN-----*/
+
+
+
+/* INICIO BODY INDEX*/
+body {
+    background-image: url(imagenes/fondo2.jpg);    /* Ubicación de la imagen */
+    background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-repeat: no-repeat;/* Para que la imagen de fondo no se repita */
+    background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-size: cover;/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-color: #d3c575;/* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */  
+    }
+.infoHome p{ /*parrafo home*/
+    padding: 3%;
+    font-size: 22px;
+    text-transform: none;
+    margin: 1%;
+    ;
+}
+    @media (max-width:768px) and (min-width:1px) {
+        .infoHome p{
+        font-size: 12px;
+        }
+    }
+    
+/* }-----FIN BODY INDEX-----
+
+
+
+/* INICIO BODY ORGANIZATION*/
+
+.organizationBody h3{
+    margin: 3%;
+    font-size: 23px;
+    }
+    @media (max-width:768px) and (min-width:1px) {
+        .organizationBody h3{
+           font-size: 12px;
+        }
+    }
+.organizationBody h1{
+
+    TEXT-ALIGN: -webkit-center;
+    font-size: 68px;
+    }
+    @media (max-width:768px) and (min-width:1px) {
+        .organizationBody h1{
+           font-size: 34px;
+        }
+    }
+.organizationBody h2{
+    TEXT-ALIGN: -webkit-center;
+    font-size: 66px;
+    }
+    @media (max-width:768px) and (min-width:1px) {
+        .organizationBody h2{
+           font-size: 33px;
+        }
+    }
+.organizationBody p {
+    font-size: 25px;
+    margin: 5%;
+}
+    @media (max-width:768px) and (min-width:1px) {
+        .organizationBody p{
+            font-size: 33px;
+        }
+    }
+.organizationBody button {
+
+    font-size: 24px;
+    }
+    @media (max-width:768px) and (min-width:1px) {
+        .organizationBody button{
+           font-size: 12px;
+        }
+    }
+.organization-wrapper {
+    float: left;
+    margin: 5px;
+}
+
+.imagen{
+    max-width: 50%;
+    float: right;
+    margin: 5%;
+}
+
+.buttonBack{
+    margin: 0% 5%;
+    font-size: 40px;
+    white-space: normal;
+}
+@media (max-width:768px) and (min-width:1px) {
+    .buttonBack{
+       font-size: 12px;
+    }
+} /*-----FIN BODY ORGANIZATION-----*/
+
+
+
+/* INICIO BODY VOCABULARY*/
+
+.vocabularyBody h2{
+    font-size: 25px;
+    margin: 5%;
+    }
+.vocabularyBody h4{
+    font-size: 30px;
+    margin: 2%;
+    }
+
+ /*-----FIN BODY VOCABULARY-----*/
+
+
+
+/*INICIO CHAMPION */
+
+.form-control {
+    background: #31312eb9;
+    border: 1px solid #c9a91afd;
+}
+.champName{
+    padding: 1% 5% 0% 0%; 
+}
+.champion-wrapper {
+    float: left;
+    margin: 5px;
+    width: 46%;
+    display: -webkit-box;
+}
+
+.championBody p {
+    font-size: 25px;
+    margin: 5%;
+}
+.championBody h2{
+    TEXT-ALIGN: -webkit-center;
+    font-size: 66px;
+}
+    @media (max-width:768px) and (min-width:1px) {
+        .championBody h2{
+           font-size: 33px;
+        }
+    }/*-----FIN BODY CHAMPION RESULT---*/
+
+/* comparison */
+.tagSelection p{
+    margin: auto;
+}
+button#select-button{
+background: none;
+border: none;
+}
+
+.rowOrderBody div{
+    float: left;
+    padding: 0% 8% 0% 0%;
+}
+
+/*INICIO FOOTER*/
+footer{
+    background: rgb(47, 47, 47);
+    margin: 4% 0% 0% 0%;
+    color: #fb0097;
+    padding: 5%;
+    clear: both
+}
+.socialMedia img{
+    padding: 8%;
+}
+footer h3{
+    font-size: 16px;
+}
+.ficus{
+    margin: -4% 0% 0% 0%;
+}/*-----FIN FOOTER-----*/
