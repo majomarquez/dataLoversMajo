@@ -81,6 +81,8 @@ Diseño<br>
 <img src="https://i.postimg.cc/zvmLxb2S/6.png" alt="Comparación"></p>
 <p>El prototipo de Alta Fidelidad fue realizado en Figma .<br>
 <a href="https://www.figma.com/proto/aj4acLNCN6XnzmJoYvOCbCcL/Untitled?node-id=0:1&amp;scaling=min-zoom"> Aquí Puedes encontrar el prototipo de alta fidelidad </a>.</p>
+<a href="https://app.zeplin.io/project/5c76df161e167dbd95247545"> Zeplin </a>.</p>
+
 <h2 id="testeos-de-usabilidad.">Testeos de Usabilidad.</h2>
 <ul>
 <li><strong>Prototipo de Baja Fidelidad</strong></li>
